@@ -205,12 +205,16 @@ color: #444;
 
 input[type="number"],
 input[type="text"] {
-padding: 11px;
-width: 100%;
-font-size: 16px;
-margin-top: 5px;
-border-radius: 8px;
-border: 1px solid #ccc;
+  padding: 11px;
+  width: 100%;
+  max-width: 100%;
+  font-size: 16px;
+  margin-top: 5px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
 }
 
 /* ==========================================
@@ -247,5 +251,16 @@ padding: 13px;
 
 button {
 font-size: 15px;
+}
+.product-line,
+.product-name-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.product-line input {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 }
