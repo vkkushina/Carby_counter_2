@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8">
+    <title>Carb Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="carbscss.css">
+  </head> <body> <div class="app-container">
+<h1>Carb Counter</h1>
+
+<div id="products-container" class="card">
+  <!-- Product lines are created by JavaScript -->
+</div>
+
+<div class="controls">
+  <button id="add-product-btn">+ Pievienot produktu</button>
+  <button id="toggle-edit-btn">Saglabāt</button>
+</div>
+
+<div id="extra-inputs" class="card">
+
+  <label>
+    Kopējais produkta svars (g):
+    <input
+      type="number"
+      id="total-weight"
+      min="0"
+      step="any"
+    >
+  </label>
+
+  <label>
+    Trauka svars (g):
+    <input
+      type="number"
+      id="dish-weight"
+      min="0"
+      step="any"
+    >
+  </label>
+
+</div>
+
+<div class="controls">
+  <button id="calculate-btn" class="primary-btn">
+    Aprēķināt
+  </button>
+</div>
+
+<div id="result" class="result-card"></div>
+
+</div> <script src="carbsjs.js" defer></script>
+  </body>
+</html>
