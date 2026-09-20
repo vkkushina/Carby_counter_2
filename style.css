@@ -248,6 +248,7 @@ padding: 12px;
 .card {
 padding: 13px;
 }
+}
 
 button {
 font-size: 15px;
@@ -262,5 +263,4 @@ font-size: 15px;
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-}
 }
