@@ -2,24 +2,24 @@
 BASE
 ========================================== */
 
-{
-box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-background: #f5f7fa;
-color: #222;
-min-height: 100vh;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #222;
+  min-height: 100vh;
 }
 
 .app-container {
-width: 100%;
-max-width: 520px;
-margin: 0 auto;
-padding: 20px;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* ==========================================
@@ -27,9 +27,9 @@ TITLE
 ========================================== */
 
 h1 {
-text-align: center;
-margin: 5px 0 20px;
-color: #222;
+  text-align: center;
+  margin: 5px 0 20px;
+  color: #222;
 }
 
 /* ==========================================
@@ -37,11 +37,11 @@ CARDS
 ========================================== */
 
 .card {
-background: white;
-border-radius: 14px;
-padding: 16px;
-margin-bottom: 15px;
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 /* ==========================================
@@ -49,38 +49,38 @@ PRODUCT LINES
 ========================================== */
 
 .product-line {
-position: relative;
-display: flex;
-flex-direction: column;
-gap: 8px;
-margin-bottom: 18px;
-padding-bottom: 16px;
-border-bottom: 1px solid #eee;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
 }
 
 .product-line:last-child {
-border-bottom: none;
-margin-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
 }
 
 .product-name-wrapper {
-position: relative;
-width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .product-line input {
-padding: 12px;
-font-size: 16px;
-border-radius: 9px;
-border: 1px solid #ccc;
-width: 100%;
-background: white;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: white;
 }
 
 .product-line input:focus {
-outline: none;
-border-color: #4285f4;
-box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.12);
+  outline: none;
+  border-color: #4285f4;
+  box-shadow: 0 0 0 2px rgba(66, 133, 244, 0.12);
 }
 
 /* ==========================================
@@ -88,45 +88,45 @@ AUTOCOMPLETE
 ========================================== */
 
 .suggestions {
-position: absolute;
-top: calc(100% + 3px);
-left: 0;
-right: 0;
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  right: 0;
 
-background: white;
-border: 1px solid #ddd;
-border-radius: 9px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 9px;
 
-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 
-z-index: 1000;
-overflow: hidden;
+  z-index: 1000;
+  overflow: hidden;
 }
 
 .suggestion-item {
-padding: 12px;
-cursor: pointer;
-border-bottom: 1px solid #eee;
-font-size: 15px;
+  padding: 12px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
 }
 
 .suggestion-item:last-child {
-border-bottom: none;
+  border-bottom: none;
 }
 
 .suggestion-item:hover,
 .suggestion-item:active {
-background: #f0f6ff;
+  background: #f0f6ff;
 }
 
 .suggestion-name {
-font-weight: bold;
+  font-weight: bold;
 }
 
 .suggestion-carbs {
-color: #666;
-font-size: 13px;
-margin-top: 3px;
+  color: #666;
+  font-size: 13px;
+  margin-top: 3px;
 }
 
 /* ==========================================
@@ -134,20 +134,20 @@ PRODUCT BUTTONS
 ========================================== */
 
 .product-actions {
-display: flex;
-justify-content: flex-end;
-margin-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2px;
 }
 
 .remove-product-btn {
-background: #fff0f0;
-color: #c62828;
-font-size: 14px;
-padding: 8px 12px;
+  background: #fff0f0;
+  color: #c62828;
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 .remove-product-btn:hover {
-background: #ffe0e0;
+  background: #ffe0e0;
 }
 
 /* ==========================================
@@ -155,41 +155,41 @@ CONTROLS
 ========================================== */
 
 .controls {
-display: flex;
-justify-content: center;
-gap: 10px;
-margin-bottom: 15px;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
 }
 
 button {
-padding: 12px 18px;
-border: none;
-border-radius: 10px;
-font-size: 16px;
-cursor: pointer;
-background: #e0e0e0;
-color: #333;
-transition: background 0.2s, transform 0.1s;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #e0e0e0;
+  color: #333;
+  transition: background 0.2s, transform 0.1s;
 }
 
 button:hover {
-background: #d0d0d0;
+  background: #d0d0d0;
 }
 
 button:active {
-transform: scale(0.98);
+  transform: scale(0.98);
 }
 
 .primary-btn {
-background: #4285f4;
-color: white;
-font-weight: bold;
-width: 100%;
+  background: #4285f4;
+  color: white;
+  font-weight: bold;
+  width: 100%;
 }
 
 .primary-btn:hover {
-background: #3367d6;
+  background: #3367d6;
 }
 
 /* ==========================================
@@ -197,10 +197,10 @@ LABELS AND INPUTS
 ========================================== */
 
 label {
-display: block;
-margin-bottom: 12px;
-font-size: 15px;
-color: #444;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #444;
 }
 
 input[type="number"],
@@ -215,24 +215,23 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-}
-
 /* ==========================================
 RESULT
 ========================================== */
 
 .result-card {
-background: #f1f8e9;
-border-radius: 12px;
-padding: 20px;
-font-size: 18px;
-font-weight: bold;
-text-align: center;
-color: #2e7d32;
+  background: #f1f8e9;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  color: #2e7d32;
 
-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
-min-height: 25px;
+  min-height: 25px;
 }
 
 /* ==========================================
@@ -241,18 +240,23 @@ MOBILE
 
 @media (max-width: 400px) {
 
-.app-container {
-padding: 12px;
+  .app-container {
+    padding: 12px;
+  }
+
+  .card {
+    padding: 13px;
+  }
 }
 
-.card {
-padding: 13px;
-}
-}
+/* ==========================================
+FINAL RESPONSIVE RULES
+========================================== */
 
 button {
-font-size: 15px;
+  font-size: 15px;
 }
+
 .product-line,
 .product-name-wrapper {
   width: 100%;
@@ -262,5 +266,8 @@ font-size: 15px;
 .product-line input {
   width: 100%;
   max-width: 100%;
+  box-sizing: border-box;
+}
+
   box-sizing: border-box;
 }
