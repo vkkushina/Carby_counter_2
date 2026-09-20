@@ -642,7 +642,7 @@ const choPer100g =
 (choPerGram * 100).toFixed(2);
 
 resultDiv.textContent =
-CHO/100g: ${choPer100g};
+  `CHO/100g: ${choPer100g}`;
 
 }
 
